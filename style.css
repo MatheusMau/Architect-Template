@@ -1,0 +1,131 @@
+:root{
+    font-size: 62.5%;
+
+    /* color */
+    --color-light : #FFFFFF;
+    --color-black: #000000;
+
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* generico */
+h1,h2,h3{
+font-family: 'Montserrat', sans-serif;
+}
+h2,h3{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    border-bottom: solid 1px #d2d2d2;
+    margin: 5rem 0;
+    
+}
+p,a{
+    font: normal 1.6rem/1.6  'Roboto', sans-serif;
+}
+
+.box{
+    width: 100%;
+    max-width: 156rem;
+    margin: auto;
+}
+
+/* header */
+.header{
+    letter-spacing: 3px;
+    padding: 0.6rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.header__nav-logo{
+    display: flex;
+    align-items: center;
+}
+.header__nav-logo a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+.logo__uppercase{
+    text-transform: uppercase;
+}
+
+/* nav */
+.nav__bar{
+    display: flex;
+    align-items: center;
+}
+.nav__bar-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav__bar-list-item{
+    margin: 0 1.5rem;
+}
+.nav__bar-link{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+/* architects */
+.architects{
+background-image: url(/img/architect.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: auto;
+height: 800px;
+position: relative;
+}
+.architects__title{
+ font-size: 3rem;   
+color: var(--color-black);    
+display: inline-block;
+/* position */
+position: absolute;
+text-align: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/* gallery */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 156rem;
+}
+.gallery__card{
+    padding: 0.7rem;
+    position: relative;
+}
+
+.gallery__description{
+    background-color: var(--color-black);
+    color: white;
+    padding: 0.5rem;
+
+    /* position */
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    top: 0.7rem;
+    left: 0.7rem;
+    margin: 0;
+}       
+
+.gallery__img {
+    width: 37.6rem;
+    height: 24rem;
+    display: block;
+}
+
+/* About */
