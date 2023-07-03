@@ -14,20 +14,24 @@
 }
 
 /* generico */
-h1,h2,h3{
-font-family: 'Montserrat', sans-serif;
-}
-h2,h3{
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    border-bottom: solid 1px #d2d2d2;
-    margin: 5rem 0;
-    
-}
-p,a{
-    font: normal 1.6rem/1.6  'Roboto', sans-serif;
+h1{
+
 }
 
+h1,h2,h3{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    border-bottom: solid 1px #d2d2d2;
+    margin-top:5rem;
+    font-family: 'Roboto', sans-serif;
+}
+p,a{
+    font: normal 1.66rem/1.6  'Roboto', sans-serif;
+    
+}
+li {
+    list-style: none;
+}
 .box{
     width: 100%;
     max-width: 156rem;
@@ -39,6 +43,12 @@ p,a{
     letter-spacing: 3px;
     padding: 0.6rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
 }
 .header__nav{
     display: flex;
@@ -48,16 +58,29 @@ p,a{
 .header__nav-logo{
     display: flex;
     align-items: center;
+    margin-left: 1.6rem;  
 }
+
 .header__nav-logo a{
     text-decoration: none;
     color: var(--color-black);
+    font-size: 1.7rem;
+    
 }
-.logo__uppercase{
+.logo__uppercase {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
+.header__nav-logo a:hover{
+background-color: rgb(163, 161, 161);
+transition: background-color 0.3s ease;
+padding: 10px;
+}
+
+
 /* nav */
+
 .nav__bar{
     display: flex;
     align-items: center;
@@ -66,6 +89,7 @@ p,a{
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 .nav__bar-list-item{
     margin: 0 1.5rem;
@@ -74,15 +98,20 @@ p,a{
     text-decoration: none;
     color: var(--color-black);
 }
-
+.nav__bar-link:hover{
+    background-color: rgb(163, 161, 161);
+    transition: background-color 0.3s ease;
+    padding: 1rem 2rem;
+}
 /* architects */
 .architects{
-background-image: url(/img/architect.jpg);
+background-image: url(/img/maiores-empresas-de-arquitetura-5.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 width: auto;
-height: 800px;
+height: 80rem;
 position: relative;
+margin-bottom: 10rem;
 }
 .architects__title{
  font-size: 3rem;   
@@ -94,6 +123,14 @@ text-align: center;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+color: rgb(29, 28, 28);
+}
+.architects__logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(163, 161, 161);
+    padding: 1rem 3rem;
+    letter-spacing: 3px;
 }
 
 /* gallery */
@@ -102,10 +139,12 @@ transform: translate(-50%, -50%);
     flex-wrap: wrap;
     margin: auto;
     max-width: 156rem;
+    margin: 5rem 0;
 }
 .gallery__card{
     padding: 0.7rem;
     position: relative;
+    align-items: center;
 }
 
 .gallery__description{
@@ -115,13 +154,12 @@ transform: translate(-50%, -50%);
 
     /* position */
     position: absolute;
-    width: 40%;
+    width: 33%;
     text-align: center;
     top: 0.7rem;
     left: 0.7rem;
     margin: 0;
 }       
-
 .gallery__img {
     width: 37.6rem;
     height: 24rem;
@@ -129,3 +167,84 @@ transform: translate(-50%, -50%);
 }
 
 /* About */
+.about__galery{
+ display: flex;
+margin: auto;   
+gap: 1.4rem;
+margin-top: 4rem;
+}
+.about__card{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+}
+.about__name{
+font-size: 2rem;
+}
+.about__profession{
+    padding: 1rem 0;
+    color: #7b7b7b;
+    font-weight: 200;
+}
+.about__description{
+    margin-top: 5rem;
+    padding-bottom: 1rem; 
+}
+.gallery__img-about {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border: solid 1px #eeecec;;
+    background-color: #eeecec;
+}
+.btn:hover{
+    background-color: #c6c2c2;
+}
+
+/* Contact */
+
+.contact__form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 1.2rem 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid  rgb(198, 195, 195);
+}
+input::placeholder {
+    font: 520 1.65rem 'Roboto', sans-serif;
+}
+button{
+    margin: 4rem 0 ;
+    width: 15rem;
+    color: white;
+    background-color: #000000;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 520;
+}
+
+.mapa{
+    width: auto;
+}
+
+/* footer */
+footer{
+    margin-top: 0.8rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2.8rem 0;
+}

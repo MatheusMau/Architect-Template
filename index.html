@@ -29,21 +29,21 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__nav-logo">
-          <a href="#"
-            ><span class="logo__uppercase"><b>br</b></span> Architects</a
-          >
+          <li>
+            <a href="#"><span class="logo__uppercase">br</span> Architects</a>
+          </li>
         </div>
         <!-- nav -->
         <div class="nav__bar">
           <ul class="nav__bar-list">
             <li class="nav__bar-list-item">
-              <a class="nav__bar-link" href="#">Projects</a>
+              <a class="nav__bar-link" href="#projects">Projects</a>
             </li>
             <li class="nav__bar-list-item">
-              <a class="nav__bar-link" href="#">About</a>
+              <a class="nav__bar-link" href="#about">About</a>
             </li>
             <li class="nav__bar-list-item">
-              <a class="nav__bar-link" href="#">Contact</a>
+              <a class="nav__bar-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,68 +54,153 @@
       <!-- architects -->
       <div class="architects box">
         <h1 class="architects__title">
-          <span class="logo__uppercase">br</span> Architects
+          <span class="architects__logo">br</span> Architects
         </h1>
       </div>
 
-      <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
       <!-- gallery -->
-      <section class="gallery">
+      <main class="gallery">
         <div class="gallery__card">
-          <img class="gallery__img" src="/img/house1.jpg" alt="" />
+          <img class="gallery__img" src="/img/house1.jpg" alt="Renovated" />
+          <p class="gallery__description">Renovated</p>
+        </div>
+
+        <div class="gallery__card">
+          <img class="gallery__img" src="/img/house2.jpg" alt="Renovated" />
+          <p class="gallery__description">Renovated</p>
+        </div>
+
+        <div class="gallery__card">
+          <img class="gallery__img" src="/img/house3.jpg" alt="Summer house" />
           <p class="gallery__description">Summer house</p>
         </div>
 
         <div class="gallery__card">
-          <img class="gallery__img" src="/img/house2.jpg" alt="" />
+          <img class="gallery__img" src="/img/house4.jpg" alt="Renovated" />
+          <p class="gallery__description">Renovated</p>
+        </div>
+
+        <div class="gallery__card">
+          <img class="gallery__img" src="/img/house5.jpg" alt="Summer house" />
           <p class="gallery__description">Summer house</p>
         </div>
 
         <div class="gallery__card">
-          <img class="gallery__img" src="/img/house3.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
+          <img class="gallery__img" src="/img/house6.jpg" alt="Renovated" />
+          <p class="gallery__description">Renovated</p>
         </div>
 
         <div class="gallery__card">
-          <img class="gallery__img" src="/img/house4.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
+          <img class="gallery__img" src="/img/house7.jpg" alt="Brick House" />
+          <p class="gallery__description">Brick House</p>
         </div>
 
         <div class="gallery__card">
-          <img class="gallery__img" src="/img/house5.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
+          <img class="gallery__img" src="/img/house8.jpg" alt="Brick House" />
+          <p class="gallery__description">Brick House</p>
         </div>
+      </main>
 
-        <div class="gallery__card">
-          <img class="gallery__img" src="/img/house6.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
-        </div>
+      <!-- About -->
+      <section>
+        <h3 id="about">About</h3>
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <!-- About gallery -->
+        <div class="about__galery">
+          <div class="about__card">
+            <img
+              class="gallery__img-about"
+              src="/img/team2.jpg"
+              alt="CEO & Founder"
+            />
+            <p class="about__name">John Doe</p>
+            <p class="about__profession">CEO & Founder</p>
+            <p class="about__description">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <a href="#" class="btn">Contact</a>
+          </div>
 
-        <div class="gallery__card">
-          <img class="gallery__img" src="/img/house7.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
-        </div>
+          <div class="about__card">
+            <img
+              class="gallery__img-about"
+              src="/img/team1.jpg"
+              alt="Girl Architect"
+            />
+            <p class="about__name">Jane Doe</p>
+            <p class="about__profession">Architect</p>
+            <p class="about__description">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <a href="#" class="btn">Contact</a>
+          </div>
 
-        <div class="gallery__card">
-          <img class="gallery__img" src="/img/house8.jpg" alt="" />
-          <p class="gallery__description">Summer house</p>
+          <div class="about__card">
+            <img
+              class="gallery__img-about"
+              src="/img/team3.jpg"
+              alt="Experienced Architect"
+            />
+            <p class="about__name">Mike Ross</p>
+            <p class="about__profession">Architect</p>
+            <p class="about__description">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+          <div class="about__card">
+            <img
+              class="gallery__img-about"
+              src="/img/team4.jpg"
+              alt="Architect Man"
+            />
+            <p class="about__name">Dan Star</p>
+            <p class="about__profession">Architect</p>
+            <p class="about__description">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <a href="#" class="btn">Contact</a>
+          </div>
         </div>
       </section>
 
-      <!-- About -->
-      <h3>About</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+      <!-- Contact -->
+      <section>
+        <h3 id="contact">Contact</h3>
+        <p class="about__description">
+          Lets get in touch and talk about your next project.
+        </p>
+        <form class="contact__form" action="#" method="post" autocomplete="off">
+          <input type="text" name="username" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <input type="text" name="comment" placeholder="Comment" />
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <div>
+        <img class="mapa" src="/img/map.jpg" alt="mapa" />
+      </div>
     </div>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer>
+      <p>Matheus Mauricio</p>
+    </footer>
   </body>
 </html>
